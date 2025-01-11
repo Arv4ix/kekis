@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	<title>Kekis</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://fonts.googlapis.com/css?famiy=Poppins">
+	<style>
+	   body,h1,h2,h3,h4,h5 {
+		font-family: "Poppins", sans-serif;
+	   }
+	   body {
+		font-size:16px;
+	   }
+	</style>
+  </head>
+
+  <body>
+
+  <!-- Top Horizontal Menu Bar -->
+     <div class="top-horizontal-menu">
+	<ul>
+	   <li><a href="index.htm">Home</a></li>
+	   <li><a href="aboutus.htm">About Us</a></li>
+	   <li><a href="products.htm">Products</a></li>
+	   <li><a href="contactus.htm">Contact Us</a></li>
+	</ul>
+     </div>
+
+  <!-- Sidebar/menu -->
+     <nav class="sidebar" id="mySidebar">
+	<div class="sidebar-container">
+	   <h3><b>Kekis</b></h3>
+	</div>
+	<div class="sidebar-links">
+	   <a href="index.htm" onclick="closeMenu()">Home</a>
+	   <a href="aboutus.htm" onclick="closeMenu()">About Us</a>
+	   <a href="gallery.htm" onclick="closeMenu()">Gallery</a>
+	   <a href="news.htm" onclick="closeMenu()">News</a>
+	   <a href="contactus.htm" onclick="closeMenu()">Contact Us</a>
+	   <a href="faqs.htm" onclick="closeMenu()">FAQ's</a>
+	</div>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">x</a>
+     </nav>
+
+  <!-- Top Menu on small screens -->
+     <header class="top-menu">
+	<a href="javascript:void(0)" class="menu-button" onclick="openMenu()">☰</a>
+	<span>Kekis</span>
+     </header>
+
+  <!-- Overlay for small screens -->
+     <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+  <!-- Page Content -->
+  <div class="main" style="margin-left: 340px; margin-right: 40px;">
+
+  <!-- Header of Products page -->
+     <div class="container" id="products">
+	<h1 class="jumbo"><b>Wooden Kitchen</b></h1>
+	<h1 class="xxxlarge text-red"><b>Products</b></h1>
+	<hr class="round" style="width: 200px; border: 5px solid red; margin-left: 0;">
+ <!-- Logo on the right side -->
+        <div class="logo-container">
+	   <img src="images/main_logo_kekis.png" alt="KEKIS logo" class="logo">
+        </div>
+     </div>
+
+  <!-- Logo on the right side -->
+     <div class="logo-container">
+	<img src="images/main_logo_kekis.png" alt="KEKIS logo" class="logo">
+     </div>
+
+  <!-- Product Categories -->
+     <div class="products-page">
+	<h1>Our Products</h1>
+
+  <!-- Kitchens Category -->
+	<div class="product-category">
+	   <h2>Custom Kitchens</h2>
+	   <div class="product-listing">
+		<div class="product">
+		   <img src="images/kitchen1.jpeg" alt="Customized kitchen No1">
+		   <h3>Classic Elegance</h3>
+		   <p>A stunning classic countryside house type kitchen that combines elegance and functionality.</p>
+		   <a href="#" class="view-details" 
+			data-title="Classic Elegance" 
+			data-description="A stunning classic kitchen design that combines elegance and functionality." 
+			data-long-description="The 'Classic Elegance' wooden kitchen features custom-built cabinetry constructed from high-quality hardwood, ensuring durability and longevity. Equipped with soft-close hinges and full-extension drawer slides, it provides a smooth and silent operation for everyday use. The countertops are crafted from premium solid wood, treated with a protective finish to resist stains and scratches, making it both beautiful and functional. "
+			data-dimensions="Ideal for Small Kitchens"
+			data-price="€3,500 - €8,900"
+			data-image="images/kitchen1.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/kitchen2.jpeg" alt="Customized kitchen No2">
+		   <h3>Light Charm</h3>
+		   <p>An inviting kitchen with a light charm that brings warmth to any home.</p>
+		   <a href="#" class="view-details" 
+			data-title="Light Charm" 
+			data-description="An inviting kitchen with a light charm that brings warmth to any home." 
+			data-long-description="The 'Light Charm' wooden kitchen is designated speciffically for small spaces, featuring compact yet efficient cabinetry made from high-quality, lightweight wood. It includes smart storage solutions like pull-out shelves and hidden drawers to maximize space utilization and maintain a clean, uncluttered look. The countertops are crafted from durable, scratch-resistant wood with a light finish, enhancing both the kitchen's aestetic appeal and functionality."
+			data-dimensions="Ideal for Small Kitchens"
+			data-price="€5,000 - €10,000"
+			data-image="images/kitchen2.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/kitchen3.jpeg" alt="Customized kitchen No3">
+		   <h3>Horizon Haven</h3>
+		   <p>A spacious, light-fitted kitchen that seamlessly blends elegance and functionality for an inspiring culinary experience.</p>
+		   <a href="#" class="view-details" 
+			data-title="Horizon Haven" 
+			data-description="A spacious, light-filled kitchen that seamlessly blends elegance and functionality for an inspiring culinary experience." 
+			data-long-description="The 'Horizon Haven' wooden kitchen is crafted for medium-size spaces, featuring high-quality hardwood cabinetry with a smooth finish for both durability and elegance. It includes strategically placed pull-out shelves and deep drawers to optimize storage and organization, making it both functional and aesthetically pleasing. The countertops are made from premium, scratch-resistant wood, ensuring a robust and stylish workspace that stands up to daily use."
+			data-dimensions="Ideal for Medium-sized Kitchens"
+			data-price="€9,500 - €18,000"
+			data-image="images/kitchen3.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/kitchen4.jpeg" alt="Customized kitchen No4">
+		   <h3>Lumina Loft</h3>
+		   <p>An airy and bright kitchen space that combines modern design with practical elegance, perfect for any home chef.</p>
+		   <a href="#" class="view-details" 
+			data-title="Lumina Loft" 
+			data-description="An airy and bright kitchen space that combines modern design with practical elegance, perfect for any home chef." 
+			data-long-description="The 'Lumina Loft' wooden kitchen is designed for medium-size kitchens, featuring sleek, modern cabinetry made from high-quality hardwood. It includes ample storage with deep drawers and pull-out shelves, ensuring efficient organization and easy access to kitchen essentials. The countertops are crafted from durable, scratch-resistant wood, providing a stylish and functional workspace."
+			data-dimensions="Ideal for Medium-sized Kitchens"
+			data-price="€8,900 - €16,500"
+			data-image="images/kitchen4.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/kitchen5.jpeg" alt="Customized kitchen No5">
+		   <h3>Veranda Vista</h3>
+		   <p>A bright, open kitchen design that invites natural light and offers a serene, spacious environment for cooking and gathering.</p>
+		   <a href="#" class="view-details" 
+			data-title="Veranda Vista" 
+			data-description="A bright, open kitchen design that invites natural light and offers a serene, spacious environment for cooking and gathering." 
+			data-long-description="The 'Veranda Vista' large wooden kitchen features expansive hardwood cabinetry with a rich, natural finish, providing ample storage and sophisticated look. It includes a spacious central island with seating, perfect for both meal preperation and social gatherings. The countertops are made from premium, durable wood, designed to withstand daily use while adding warmth and elegance to the kitchen."
+			data-dimensions="Ideal for Large-sized Kitchens"
+			data-price="€15.000 - €30-000"
+			data-image="images/kitchen5.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/kitchen6.jpeg" alt="Customized kitchen No6">
+		   <h3>Solaris Suite</h3>
+		   <p>A bright and expansive kitchen that harmoniously blends modern sophistication with a warm, inviting atmosphere.</p>
+		   <a href="#" class="view-details" 
+			data-title="Solaris Suite" 
+			data-description="A bright and expansive kitchen that harmoniously blends modern sophistication with a warm, inviting atmosphere." 
+			data-long-description="The 'Solaris Suite' large wooden kitchen features high-quality hardwood cabinetry with a sleek, modern finish, providing both ample storage and a contemporary look. It includes an expansive island with integrated appliances and seating. The countertops are made from premium, scratch-resistand wood, ensuring durability and a stylish workspace that enhances the overall functionality of the kitchen."
+			data-dimensions="Ideal for Large-sized Kitchens"
+			data-price="€16,500 - €32.000"
+data-image="images/kitchen6.jpeg">View Details</a>
+		</div>
+	   </div>
+	</div>
+
+  <!-- Cabinets Category -->
+	<div class="product-category">
+	   <h2>Kitchen Cabinets</h2>
+	   <div class="product-listing">
+		<div class="product">
+		   <img src="images/cabinets/cabinets1.jpeg" alt="Customized Cabinets No1">
+		   <h3>Foundation Base Cabinets</h3>
+		   <p>Sturdy and sleek kitchen base cabinets designed to provide ample storage and a solid foundation for your culinary workspace.</p>
+		   <a href="#" class="view-details" 
+			data-title="Foundation Base Cabinets" 
+			data-description="Sturdy and sleek kitchen base cabinets designed to provide ample storage and a solid foundation for your culinary workspace." 
+			data-long-description="The 'Foundation Base Cabinets' are expertly crafetd from high-quality hardwood, ensuring durability and longevity. Each cabinet features adjustable shelves and soft-close hinges, providing both versatility and a smooth, quiet operation. The finish is designed to be resistant to scratches and stains, maintaining a sleek and pristine appearance over time."
+			data-dimensions="Height: 88cm Depth: 61cm Width: 30-122cm"
+			data-price="€500 - €1,200"
+data-image="images/cabinets/cabinets1.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/cabinets/cabinets2.jpeg" alt="Customized Cabinets No2">
+		   <h3>Heritage Base Cabinets</h3>
+		   <p>Elegant and durable kitchen base cabinets that offer timeless appeal and practical storage solutions for any culinary space.</p>
+		   <a href="#" class="view-details" 
+			data-title="Heritage Base Cabinets" 
+			data-description="Elegant and durable kitchen base cabinets that offer timeless appeal and practical storage solutions for any culinary space." 
+			data-long-description="The 'Heritage Base Cabinets' are crafted from premium hardwood, ensuring exceptional durability and a timeless aestethic. Each cabinet features full-extension, soft-close drawers for smooth and silent operation, as well as adjustable shelves to accommodate various storage needs. The cabinets are finished with a protective coating, resistant to stains and scratches, maintaining their elegant appearance over time."
+			data-dimensions="Height: 88cm Depth: 61cm Width: 30-122cm"
+			data-price="€700 - €1,500"
+data-image="images/cabinets/cabinets2.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/cabinets/cabinets3.jpeg" alt="Customized Cabinets No3">
+		   <h3>Elevation Wall Cabinets</h3>
+		   <p>Sophisticated and spacious kitchen wall cabinets designed to maximize vertical storage while enhancing the aestetic appeal of your culinary space.</p>
+		   <a href="#" class="view-details" 
+			data-title="Elevation Wall Cabinets" 
+			data-description="Sophisticated and spacious kitchen wall cabinets designed to maximize vertical storage while enhancing the aestetic appeal of your culinary space." 
+			data-long-description="The 'Elevation Wall Cabinets' are meticulously crafted from high-quality hardwood, ensuring robustness and a long-lasting finish. Each cabinet features adjustable shelves and soft-close doors, providing flexible storage solutions and a smooth, silent operation. The cabinets are coated with a protective layer that resists scratches and stains, maintaining their elegant and pristine appearance over time."
+			data-dimensions="Height: 76-107cm Depth: 61cm Width: 30-122cm"
+			data-price="€600 - €1,500"
+			data-image="images/cabinets/cabinets3.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/cabinets/cabinets4.jpeg" alt="Customized Cabinets No4">
+		   <h3>Horizon Wall Cabinets</h3>
+		   <p>Sleek and functional kitchen wall cabinets that provide optimal storage and elevate the design of your kitchen with modern elegance.</p>
+		   <a href="#" class="view-details" 
+			data-title="Horizon Wall Cabinets" 
+			data-description="Sleek and functional kitchen wall cabinets that provide optimal storage and elevate the design of your kitchen with modern elegance." 
+			data-long-description="The 'Horizon Wall Cabinets' are expertly crafted from high-quality hardwood, ensuring durability and a refined finish. Each cabinet features soft-close doors and adjustable shelves, providing both flexibility and a smooth, silent operation. The cabinets are finished with a protective coating that resists scratches and stains, maintaining their elegant appearance over time."
+			data-dimensions="Height: 76-107cm Depth: 61cm Width: 30-122cm"
+			data-price="€800 - €1,700"
+			data-image="images/cabinets/cabinets4.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/cabinets/cabinets5.jpeg" alt="Customized Cabinets No5">
+		   <h3>Apex Tall Cabinets</h3>
+		   <p>Elegant and spacious kitchen tall cabinets designed to optimize vertical storage and add a touch of sophistication to your culinary space.</p>
+		   <a href="#" class="view-details" 
+			data-title="Apex Tall Cabinets" 
+			data-description="Elegant and spacious kitchen tall cabinets designed to optimize vertical storage and add a touch of sophistication to your culinary space." 
+			data-long-description="The 'Apex Tall Cabinets' are designed with high-quality hardwood, ensuring durability and a sleek finish. Each cabinet includes soft-close doors and adjustable shelves, providing both flexibility and quiet operation. The cabinets are finished with a protective coating that resists scratches and stains, maintaining their elegant appearance over time."
+			data-dimensions="Height: 150-190cm Depth: 52cm Width: 30-64cm"
+			data-price="€1,000 - €1,900"
+			data-image="images/cabinets/cabinets5.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/cabinets/cabinets6.jpeg" alt="Customized Cabinets No6">
+		   <h3>Artisan Speciality Cabinets</h3>
+		   <p>Unique and meticulously crafter kitchen speciality cabinets designed to meet specific storage needs with elegance and precision.</p>
+		   <a href="#" class="view-details" 
+			data-title="Artisian Speciality Cabinets" 
+			data-description="Unique and meticulously crafter kitchen speciality cabinets designed to meet specific storage needs with elegance and precision." 
+			data-long-description="The 'Artisian Speciality Cabinets' are meticulously crafted from premium hardwood, ensuring exceptional durability and a refined finish. Each cabinet features soft-close doors and adjustable shelves, providing both flexibility and quiet operation. The cabinets are finished with a protective coating that resists scratches and stains, maintaining thier elegant appearance over time."
+			data-dimensions="Height: 150-190cm Depth: 52cm Width: 30-64cm"
+			data-price="€1,200 - €1,000"
+			data-image="images/cabinets/cabinets6.jpeg">View Details</a>
+		</div>
+	   </div>
+	</div>
+
+  <!-- Countertops Category -->
+	<div class="product-category">
+	   <h2>Countertops</h2>
+	   <div class="product-listing">
+		<div class="product">
+		   <img src="images/countertops/countertops1.jpeg" alt="Customized Countertops No1">
+		   <h3>Oak Elegance Countertops</h3>
+		   <p>A premium, durable solid wood countertop that brings warmth and sophistication to any kitchen with its natural oak finish and timeless appeal.</p>
+		   <a href="#" class="view-details" 
+			data-title="Oak Elegance Countertops" 
+			data-description="A premium, durable solid wood countertop that brings warmth and sophistication to any kitchen with its natural oak finish and timeless appeal." 
+			data-long-description="The 'Oak Elegance Countertops' are crafted from premium European oak, showcasing natural wood grain and distinct knots for a timeless, luxurious appearance. Finished with a high-quality lacquer, it provides a durable and scratch-resistant surface that is east to maintain. The countertop is available in various thicknesses ensuring both strenght and elegance."
+			data-dimensions="Length: 1,5-4m Width: 60-65cm Thickness: 40mm"
+			data-price="€800 - €1,200"
+			data-image="images/countertops/countertops1.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/countertops/countertops2.jpeg" alt="Customized Countertops No2">
+		   <h3>Maple Heritage Butcher Block</h3>
+		   <p>A robust and versatile countertop crafted from premium maple wood, offering a classic, functional surface that's perfect for both culinary tasks and adding a rustic charm to your kitchen.</p>
+		   <a href="#" class="view-details" 
+			data-title="Maple Heritage Butcher Block" 
+			data-description="A robust and versatile countertop crafted from premium maple wood, offering a classic, functional surface that's perfect for both culinary tasks and adding a rustic charm to your kitchen." 
+			data-long-description="The 'Heritage Butcher Block' countertop is crafted from high-quality hardwood, providing a durable and robust surface ideal for food preperation. Featuring a natural, unfinished edge, it offers a rustic charm and can be easily sanded and re-oiled to maintain its beauty. The countertop is available in various thicknesses ensuring both strenght and elegance."
+			data-dimensions="Length: 1,5-4m Width: 60-65cm Thickness: 40mm"
+			data-price="€900 - €1,300"
+			data-image="images/countertops/countertops2.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/countertops/countertops3.jpeg" alt="Customized Countertops No3">
+		   <h3>Contrast Harmony Countertops</h3>
+		   <p>A bespoke countertop featuring a sleek white surface with striking dark grey accents, perfectly balancing modern elegance and functionality for a sophisticated kitchen aestetics.</p>
+		   <a href="#" class="view-details" 
+			data-title="Contrast Harmony Countertops" 
+			data-description="A bespoke countertop featuring a sleek white surface with striking dark grey accents, perfectly balancing modern elegance and functionality for a sophisticated kitchen aestetics." 
+			data-long-description="The 'Contrast Harmony Countertops' are expertly crafted from premium hardwood, showcasing a unique blend of contrasting wood tones for a striking visual effect. Each countertop is finished with a high-quality lacquer, providing a durable and scratch-resistant surface that is easy to maintain. The countertops are available in various thicknesses ensuring both strenght and elegance."
+			data-dimensions="Length: 1,5-4m Width: 60-65cm Thickness: 40mm"
+			data-price="€900 - €1,300"
+			data-image="images/countertops/countertops3.jpeg">View Details</a>
+		</div>
+	   </div>
+	</div>
+
+  <!-- Kitchen Islands Category -->
+	<div class="product-category">
+	   <h2>Kitchen Islands</h2>
+	   <div class="product-listing">
+		<div class="product">
+		   <img src="images/islands/islands1.jpeg" alt="Customized Kitchen Islands No1">
+		   <h3>Versatile Oasis Kitchen Islands</h3>
+		   <p>A stylish and practical freestanding kitchen island offering ample workspace, storage, and seating, perfect for enhancing both functionality and aesthetics in any modern kitchen.</p>
+		   <a href="#" class="view-details" 
+			data-title="Versatile Oasis Kitchen Islands" 
+			data-description="A stylish and practical freestanding kitchen island offering ample workspace, storage, and seating, perfect for enhancing both functionality and aesthetics in any modern kitchen." 
+			data-long-description="The 'Versatile Oasis Kitchen Island' is a stylish and functional addition to any kitchen, featuring a spacious tabletop for food preparation and a durable, natural wood finish that complements various home decor styles. It includes two open shelves for ample storage, keeping kitchen essentials organized and easily accessible. Constructed from engineered wood with a resistant melamine finish, this kitchen island ensures longevity and easy maintenance."
+			data-dimensions="Width: 90cm Length: 180cm Height: 91cm"
+			data-price="€1,100 - €1,900"
+			data-image="images/islands/islands1.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/islands/islands2.jpeg" alt="Customized Kitchen Islands No2">
+		   <h3>Seamless Haven Kitchen Islands</h3>
+		   <p>A sleek and integrated built-in kitchen island, designated to provide maximum functionality and style with ample storage and workspace, seamlessly blending into your kitchen environment.</p>
+		   <a href="#" class="view-details" 
+			data-title="Seamless Haven Kitchen Islands" 
+			data-description="A sleek and integrated built-in kitchen island, designated to provide maximum functionality and style with ample storage and workspace, seamlessly blending into your kitchen environment." 
+			data-long-description="The 'Seamless Haven Kitchen Island' features a sleek, handleless design with a durable, scratch-resistant finish that seamlessly integrates into modern kitchen spaces. It includes ample storage with soft-close drawers and cabinets, providing a clutter-free environment. Crafted from high-quality engineered wood, this island ensures both aesthetic appeal and long-lasting durability."
+			data-dimensions="Width: 90cm Length: 180cm Height: 90cm"
+			data-price="€1,600 - €2,400"
+			data-image="images/islands/islands2.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/islands/islands3.jpeg" alt="Customized Kitchen Islands No3">
+		   <h3>Mobile Culinary Station</h3>
+		   <p>A versatile and convenient portable kitchen island, designed with wheels for easy mobility, providing a flexible workspace and storage solutio that adapts to any kitchen layout.</p>
+		   <a href="#" class="view-details" 
+			data-title="Mobile Culinary Station" 
+			data-description="A versatile and convenient portable kitchen island, designed with wheels for easy mobility, providing a flexible workspace and storage solutio that adapts to any kitchen layout." 
+			data-long-description="The 'Mobile Culinary Station' mobile island features a sturdy butcher-block top made from high-quality hardwood, providing a durable and spacious work surface. It includes multiple storage compartments with soft-close drawers and open shelves, ensuring ample space for kitchen essentials. Equipped with heavy-duty locking casters, this island offers easy mobility and can be conveniently moved around the kitchen as needed."
+			data-dimensions="Width: 48cm Length: 110cm Height: 90cm"
+			data-price="€500 - €1,000"
+			data-image="images/islands/islands3.jpeg">View Details</a>
+		</div>
+	   </div>
+	</div>
+
+  <!-- Kitchen Storage Solutions Category -->
+	<div class="product-category">
+	   <h2>Kitchen Storage Solutions</h2>
+	   <div class="product-listing">
+		<div class="product">
+		   <img src="images/storage/storage1.jpeg" alt="Customized Storage Solutions No1">
+		   <h3>Effortless Access Pull-out Shelves</h3>
+		   <p>Innovative and space-saving pull-out shelves designated to maximize storage and provide easy access to kitchen essentials, making organization both simple and efficient.</p>
+		   <a href="#" class="view-details" 
+			data-title="Effortless Access Pull-out Shelves" 
+			data-description="Innovative and space-saving pull-out shelves designated to maximize storage and provide easy access to kitchen essentials, making organization both simple and efficient." 
+			data-long-description="The 'Effortless Access Pull-Out Shelves' feature a smooth, full-extension slide mechanism that allows easy access to stored items without the need for bending or stretching. Constructed from high-quality, durable materials, these shelves are designed to withstand heavy use and provide reliable performance. The sleek, modern design seamlessly integrates into any kitchen space, offering both functionality and aesthetic appeal."
+			data-dimensions="Width: 30cm Depth: 21cm Height: 5.8cm"
+			data-price="€200 - €500"
+			data-image="images/storage/storage1.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/storage/storage2.jpeg" alt="Customized Storage Solutions No2">
+		   <h3>Swift Reach Pull-out Shelves</h3>
+		   <p>Practical and efficient pull-out shelves designed to provide quick and easy access to stored items, enhancing kitchen organization and maximizing storage space.</p>
+		   <a href="#" class="view-details" 
+			data-title="Swift Reach Pull-out Shelves" 
+			data-description="Practical and efficient pull-out shelves designed to provide quick and easy access to stored items, enhancing kitchen organization and maximizing storage space." 
+			data-long-description="The 'Swift Reach Pull-Out Shelves' feature a smooth, full-extension slide mechanism with soft-close functionality, allowing easy access to stored items while maintaining a clutter-free kitchen space. Constructed from high-quality, durable materials, these shelves are designed to withstand heavy use and provide reliable performance. The sleek, modern design seamlessly integrates into any kitchen cabinet, offering both functionality and aesthetic appeal."
+			data-dimensions="Width: 50cm Depth: 22cm Height: 5cm"
+			data-price="€250 - €600"
+			data-image="images/storage/storage2.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/storage/storage3.jpeg" alt="Customized Storage Solutions No3">
+		   <h3>Organized Haven Pantry Storage</h3>
+		   <p>Spacious and efficient pantry storage solutions designed to keep your kitchen essentials neatly organized and easily accessible, enhancing overall kitchen functionality and tidiness.</p>
+		   <a href="#" class="view-details" 
+			data-title="Organized Haven Pantry Storage" 
+			data-description="Spacious and efficient pantry storage solutions designed to keep your kitchen essentials neatly organized and easily accessible, enhancing overall kitchen functionality and tidiness." 
+			data-long-description="The 'Organized Haven Pantry Storage' features adjustable, heavy-duty steel shelves designed to maximize vertical space and improve accessibility to pantry items. It includes built-in dividers and pull-out baskets to keep items neatly organized and easily reachable. Crafted from durable materials, this pantry storage solution ensures longevity and efficient use of space in any kitchen."
+			data-dimensions="Width: 60cm Depth: 40cm Height: 180cm"
+			data-price="€2,000 - €5,200"
+			data-image="images/storage/storage3.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/storage/storage4.jpeg" alt="Customized Storage Solutions No4">
+		   <h3>Tidy Treasure Pantry Storage</h3>
+		   <p>Efficient and spacious pantry storage designed to keep your kitchen essentials organized and within easy reach, transforming your kitchen into a tidy and functional space.</p>
+		   <a href="#" class="view-details" 
+			data-title="Tidy Treasure Pantry Storage" 
+			data-description="Efficient and spacious pantry storage designed to keep your kitchen essentials organized and within easy reach, transforming your kitchen into a tidy and functional space." 
+			data-long-description="The 'Tidy Treasure Pantry Storage' features adjustable, heavy-duty steel shelves designed to maximize vertical space and improve accessibility to pantry items. It includes built-in dividers and pull-out baskets to keep items neatly organized and easily reachable. Crafted from durable materials, this pantry storage solution ensures longevity and efficient use of space in any kitchen."
+			data-dimensions="Width: 60cm Depth: 40cm Height: 180cm"
+			data-price="€2,000 - €7,200"
+			data-image="images/storage/storage4.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/storage/storage5.jpeg" alt="Customized Storage Solutions No5">
+		   <h3>Corner Solutions</h3>
+		   <p>Ingenious and space-efficient kitchen corner solutions designed to utilize every inch of your kitchen, making awkward spaces functional and easily accessible.</p>
+		   <a href="#" class="view-details" 
+			data-title="Corner Solutions" 
+			data-description="Ingenious and space-efficient kitchen corner solutions designed to utilize every inch of your kitchen, making awkward spaces functional and easily accessible." 
+			data-long-description="The 'Corner Solutions' constructed from high-quality wood, these solutions are designed to blend seamlessly with any kitchen decor while providing efficient storage. The soft-close mechanism ensures smooth operation and prevents slamming, adding to the overall user experience."
+			data-dimensions="Width: 84-91cm Depth: 61cm Height: 80-200cm"
+			data-price="€3,000 - €7,200"
+			data-image="images/storage/storage5.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/storage/storage6.jpeg" alt="Customized Storage Solutions No6">
+		   <h3>Clever Corner Kitchen Solutions</h3>
+		   <p>Smart and innovative corner solutions designed to maximize storage and functionality, turning every corner of your kitchen into a practical and accessible space.</p>
+		   <a href="#" class="view-details" 
+			data-title="Clever Corner Kitchen Solutions" 
+			data-description="Smart and innovative corner solutions designed to maximize storage and functionality, turning every corner of your kitchen into a practical and accessible space." 
+			data-long-description="The 'Clever Corner Kitchen Solutions' corner-type wooden kitchen with pre-built shelves features sturdy, high-quality wood construction designed to maximize corner space and provide ample storage. The pre-built shelves are adjustable, allowing for flexible organization of kitchen items. This kitchen solution includes a soft-close mechanism for smooth and silent operation, enhancing the overall user experience."
+			data-dimensions="Width: 84-91cm Depth: 61cm Height: 80-200cm"
+			data-price="€5,500 - €12,700"
+			data-image="images/storage/storage6.jpeg">View Details</a>
+		</div>
+	   </div>
+	</div>
+
+  <!-- Finishes & Accessories Category -->
+	<div class="product-category">
+	   <h2>Finishes & Accessories</h2>
+	   <div class="product-listing">
+		<div class="product">
+		   <img src="images/accessories/accessories1.jpeg" alt="Customized Accessories No1">
+		   <h3>Elegant Touch Handles & Knobs</h3>
+		   <p>Stylish and durable cabinet handles and knobs designed to add a touch of elegance and functionality to your kitchen, enhancing both its aestetic and practical appeal.</p>
+		   <a href="#" class="view-details" 
+			data-title="Elegant Touch Handles & Knobs" 
+			data-description="Stylish and durable cabinet handles and knobs designed to add a touch of elegance and functionality to your kitchen, enhancing both its aestetic and practical appeal." 
+			data-long-description="The 'Elegant Touch Handles & Knobs' feature a sleek, minimalist design with a concealed round rose, adding a touch of sophistication to any kitchen cabinet or drawer. Crafted from high-quality materials, these handles and knobs are built to last and provide a comfortable grip. Available in a variety of finishes, they seamlessly blend with any kitchen decor, enhancing the overall aesthetic appeal."
+			data-dimensions="Width: 9mm Length: 223-1000mm"
+			data-price="€5 - €20"
+			data-image="images/accessories/accessories1.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/accessories/accessories2.jpeg" alt="Customized Accessories No2">
+		   <h3>Refined Grip Handles & Knobs</h3>
+		   <p>Tastefull and ergonomically designed cabinet handles and knobs that combine comfort with a sophisticated look, enhancing the overall style and usability of your kitchen.</p>
+		   <a href="#" class="view-details" 
+			data-title="Refined Grip Handles & Knobs" 
+			data-description="Tastefull and ergonomically designed cabinet handles and knobs that combine comfort with a sophisticated look, enhancing the overall style and usability of your kitchen." 
+			data-long-description="The 'Refined Grip Handles & Knobs' feature a sleek, ergonomic design with a soft-touch finish, providing a comfortable and secure grip. Made from high-quality materials, these handles and knobs are built to withstand daily use and maintain their aesthetic appeal. Available in a variety of finishes, they complement any kitchen decor and add a touch of elegance."
+			data-dimensions="Width: 9mm Length: 223-1000mm"
+			data-price="€8 - €25"
+			data-image="images/accessories/accessories2.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/accessories/accessories3.jpeg" alt="Customized Accessories No3">
+		   <h3>Gleaming Guard Backsplash</h3>
+		   <p>A chic and practical kitchen backsplash designed to protect your walls while adding a touch of modern elegance with its sleek and easy-to-clean surface.</p>
+		   <a href="#" class="view-details" 
+			data-title="Gleaming Guard Backsplash" 
+			data-description="A chic and practical kitchen backsplash designed to protect your walls while adding a touch of modern elegance with its sleek and easy-to-clean surface." 
+			data-long-description="The 'Gleaming Guard Backsplash' is crafted from high-quality hardwood, providing a sleek and durable surface that protects kitchen walls from grease and moisture. Its easy-to-clean, non-porous finish ensures hygiene and longevity. The backsplash is designed to seamlessly integrate with any kitchen decor, adding both functionality and style."
+			data-dimensions="Width: 60-180cm Height: 30-60cm"
+			data-price="€150 - €500"
+			data-image="images/accessories/accessories3.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/accessories/accessories4.jpeg" alt="Customized Accessories No4">
+		   <h3>Stylish Shield Backsplash</h3>
+		   <p>A contemporary and functional kitchen backsplash designed to protect your walls from splashes and spills while enhancing the aestetic appeal of your kitchen with its stylish design.</p>
+		   <a href="#" class="view-details" 
+			data-title="Stylish Shield Backsplash" 
+			data-description="A contemporary and functional kitchen backsplash designed to protect your walls from splashes and spills while enhancing the aestetic appeal of your kitchen with its stylish design." 
+			data-long-description="The 'Stylish Shield Backsplash' is crafted from high-quality wood, providing a durable and stylish surface that protects kitchen walls from grease and moisture. Its easy-to-clean, non-porous finish ensures hygiene and longevity. The backsplash is designed to seamlessly integrate with any kitchen decor, adding both functionality and style."
+			data-dimensions="Width: 60-180cm Height: 30-70cm"
+			data-price="€200 - €550"
+			data-image="images/accessories/accessories4.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/accessories/accessories5.jpeg" alt="Customized Accessories No5">
+		   <h3>Refined Edge Mouldings & Trim</h3>
+		   <p>Beautifully crafted wooden kitchen mouldings and trim that add a touch of elegance and sophistication to your kitchen, enhancing its architectual details and overall aesthetic.</p>
+		   <a href="#" class="view-details" 
+			data-title="Refined Edge Mouldings & Trim" 
+			data-description="Beautifully crafted wooden kitchen mouldings and trim that add a touch of elegance and sophistication to your kitchen, enhancing its architectual details and overall aesthetic." 
+			data-long-description="The 'Refined Edge Mouldings & Trim' feature a sleek, contemporary design with clean lines that add a touch of elegance to any kitchen. Made from high-quality wood, these mouldings and trims are built to withstand daily wear and tear while maintaining their aesthetic appeal. The easy-to-install design ensures a seamless fit, enhancing the overall look of your kitchen."
+			data-dimensions="Width: 7.8-12.7cm Thickness: 1.6-2.5cm"
+			data-price="€30 - €70"
+			data-image="images/accessories/accessories5.jpeg">View Details</a>
+		</div>
+		<div class="product">
+		   <img src="images/accessories/accessories6.jpeg" alt="Customized Accessories No6">
+		   <h3>Timeless Craft Mouldings & Trim</h3>
+		   <p>Exquisitely designed wooden kitchen mouldings and trim that add a touch of refined craftsmanship and elegance, enhancing the architectual beauty and warmth of your kitchen.</p>
+		   <a href="#" class="view-details" 
+			data-title="Timeless Craft Mouldings & Trim" 
+			data-description="Exquisitely designed wooden kitchen mouldings and trim that add a touch of refined craftsmanship and elegance, enhancing the architectual beauty and warmth of your kitchen." 
+			data-long-description="The 'Timeless Craft Mouldings & Trim' boast an elegant, classic design that adds a touch of sophistication to any kitchen space. Constructed from premium-quality wood, these mouldings and trims are built for durability and enduring beauty. Their easy-to-install design ensures a seamless fit, enhancing the overall aesthetic of your kitchen."
+			data-dimensions="Width: 7.8-12.7cm Thickness: 1.6-2.5cm"
+			data-price="€35 - €80"
+			data-image="images/accessories/accessories6.jpeg">View Details</a>
+		</div>
+	   </div>
+	</div>
+     </div>
+
+  <!-- Modal Structure -->
+     <div id="productModal" class="product-modal">
+	<div class="product-modal-content">
+	   <span class="product-close">&times;</span>
+	   <h2 id="modalTitle"></h2>
+	   <img id="modalImage" src="" alt="Product Image">
+	   <p id="modalDescription"></p>
+	   <ul id="modalAdditionalInfo"></ul>
+	</div>
+     </div>
+
+  </div>
+
+  <!-- Footer -->
+     <footer class="footer">
+	<div class="footer-container">
+	   <div class="footer-column">
+		<h3>Contact Us</h3>
+		<p>50 Bilogorska, Slavonski Brod, 35000</p>
+		<p>Phone: (+385) 900358278</p>
+		<p>Email: comingsoon@kekis.hr</p>
+	   </div>
+	   <div class="footer-column">
+		<h3>Follow Us</h3>
+		<a href="#"><img src="images/icons/facebook_icon.png" alt="Facebook"></a>
+		<a href="#"><img src="images/icons/instagram_icon.png" alt="Insatgram"></a>
+		<a href="#"><img src="images/icons/linkedin_icon.png" alt="LinkedIn"></a>
+	   </div>
+	   <div class="footer-column">
+		<h3>Quick Links</h3>
+		<a href="index.htm">Home |</a>
+		<a href="aboutus.htm">About Us |</a>
+		<a href="products.htm">Products |</a>
+		<a href="gallery.htm">Gallery |</a>
+		<a href="news.htm">News |</a>
+		<a href="contactus.htm">Contact Us |</a>
+		<a href="faqs.htm">FAQ's</a>
+	   </div>
+	   <div class="footer-column">
+		<h3>Newsletter</h3>
+		<form action="/subscribe" method="post">
+		   <input type="email" name="email" placeholder="Enter your email">
+		   <button type="submit">Subscribe</button>
+		</form>
+	   </div>
+	</div>
+	<div class="footer-bottom">
+	   <p>&copy; 2025 Wooden Kitchen Manufacturer 'Kekis'. All rights reserved.</p>
+	   <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a>
+	</div>
+     </footer>
+
+  <script src="JavaScript/scripts.js"></script>
+
+  </body>
+
+</html>

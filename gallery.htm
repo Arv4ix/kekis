@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	<title>Kekis</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://fonts.googlapis.com/css?famiy=Poppins">
+	<style>
+	   body,h1,h2,h3,h4,h5 {
+		font-family: "Poppins", sans-serif;
+	   }
+	   body {
+		font-size:16px;
+	   }
+	</style>
+  </head>
+
+  <body>
+
+  <!-- Top Horizontal Menu Bar -->
+     <div class="top-horizontal-menu">
+	<ul>
+	   <li><a href="index.htm">Home</a></li>
+	   <li><a href="aboutus.htm">About Us</a></li>
+	   <li><a href="products.htm">Products</a></li>
+	   <li><a href="contactus.htm">Contact Us</a></li>
+	</ul>
+     </div>
+
+  <!-- Sidebar/menu -->
+     <nav class="sidebar" id="mySidebar">
+	<div class="sidebar-container">
+	   <h3><b>Kekis</b></h3>
+	</div>
+	<div class="sidebar-links">
+	   <a href="index.htm" onclick="closeMenu()">Home</a>
+	   <a href="aboutus.htm" onclick="closeMenu()">About Us</a>
+	   <a href="products.htm" onclick="closeMenu()">Products</a>
+	   <a href="news.htm" onclick="closeMenu()">News</a>
+	   <a href="contactus.htm" onclick="closeMenu()">Contact Us</a>
+	   <a href="faqs.htm" onclick="closeMenu()">FAQ's</a>
+	</div>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">x</a>
+     </nav>
+
+  <!-- Top Menu on small screens -->
+     <header class="top-menu">
+	<a href="javascript:void(0)" class="menu-button" onclick="openMenu()">☰</a>
+	<span>Kekis</span>
+     </header>
+
+  <!-- Overlay for small screens -->
+     <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+  <!-- Page Content -->
+  <div class="main" style="margin-left: 340px; margin-right: 40px;">
+
+  <!-- Header of Gallery page -->
+     <div class="container" id="gallery">
+	<h1 class="jumbo"><b>Wooden Kitchen</b></h1>
+	<h1 class="xxxlarge text-red"><b>Gallery</b></h1>
+	<hr class="round" style="width: 200px; border: 5px solid red; margin-left: 0;">
+ <!-- Logo on the right side -->
+        <div class="logo-container">
+	   <img src="images/main_logo_kekis.png" alt="KEKIS logo" class="logo">
+        </div>
+     </div>
+
+  <!-- Logo on the right side -->
+     <div class="logo-container">
+	<img src="images/main_logo_kekis.png" alt="KEKIS logo" class="logo">
+     </div>
+
+     <!-- Category: Built Kitchens -->
+     <div class="category-container">
+	<h2>Pre-built Kitchens</h2>
+	<div class="gallery">
+	   <img src="images/kitchen1.jpeg" class="thumbnail" data-category="built-kitchens" data-slide="1" alt="Classic Elegance">
+	   <img src="images/kitchen2.jpeg" class="thumbnail" data-category="built-kitchens" data-slide="2" alt="Light Charm">
+	   <img src="images/kitchen3.jpeg" class="thumbnail" data-category="built-kitchens" data-slide="3" alt="Horizon Haven">
+	   <img src="images/kitchen4.jpeg" class="thumbnail" data-category="built-kitchens" data-slide="4" alt="Lumina Loft">
+	   <img src="images/kitchen5.jpeg" class="thumbnail" data-category="built-kitchens" data-slide="5" alt="Veranda Vista">
+	   <img src="images/kitchen6.jpeg" class="thumbnail" data-category="built-kitchens" data-slide="6" alt="Solaris Suite">
+	</div>
+     </div>
+
+     <!-- Category: Kitchen Cabinets -->
+     <div class="category-container">
+	<h2>Kitchen Cabinets</h2>
+	<div class="gallery">
+	   <img src="images/cabinets/cabinets1.jpeg" class="thumbnail" data-category="kitchen-cabinets" data-slide="1" alt="Foundation Base Cabinets">
+	   <img src="images/cabinets/cabinets2.jpeg" class="thumbnail" data-category="kitchen-cabinets" data-slide="2" alt="Heritage Base Cabinets">
+	   <img src="images/cabinets/cabinets3.jpeg" class="thumbnail" data-category="kitchen-cabinets" data-slide="3" alt="Elevation Wall Cabinets">
+	   <img src="images/cabinets/cabinets4.jpeg" class="thumbnail" data-category="kitchen-cabinets" data-slide="4" alt="Horizon Wall Cabinets">
+	   <img src="images/cabinets/cabinets5.jpeg" class="thumbnail" data-category="kitchen-cabinets" data-slide="5" alt="Apex Tall Cabinets">
+	   <img src="images/cabinets/cabinets6.jpeg" class="thumbnail" data-category="kitchen-cabinets" data-slide="6" alt="Artisan Speciality Cabinets">
+	</div>
+     </div>
+
+     <!-- Category: Kitchen Countertops -->
+     <div class="category-container">
+	<h2>Kitchen Countertops</h2>
+	<div class="gallery">
+	   <img src="images/countertops/countertops1.jpeg" class="thumbnail" data-category="kitchen-countertops" data-slide="1" alt="Oak Elegance Countertops">
+	   <img src="images/countertops/countertops2.jpeg" class="thumbnail" data-category="kitchen-countertops" data-slide="2" alt="Maple Heritage Butcher Block">
+	   <img src="images/countertops/countertops3.jpeg" class="thumbnail" data-category="kitchen-countertops" data-slide="3" alt="Contrast Harmony Countertops">
+	</div>
+     </div>
+
+     <!-- Category: Kitchen Islands -->
+     <div class="category-container">
+	<h2>Kitchen Islands</h2>
+	<div class="gallery">
+	   <img src="images/islands/islands1.jpeg" class="thumbnail" data-category="kitchen-islands" data-slide="1" alt="Versatile Oasis Kitchen Islands">
+	   <img src="images/islands/islands2.jpeg" class="thumbnail" data-category="kitchen-islands" data-slide="2" alt="Seamless Haven Kitchen Islands">
+	   <img src="images/islands/islands3.jpeg" class="thumbnail" data-category="kitchen-islands" data-slide="3" alt="Mobile Culinary Station">
+	</div>
+     </div>
+
+     <!-- Category: Kitchen Storage -->
+     <div class="category-container">
+	<h2>Kitchen Storage Solutions</h2>
+	<div class="gallery">
+	   <img src="images/storage/storage1.jpeg" class="thumbnail" data-category="kitchen-storage" data-slide="1" alt="Effortless Access Pull-out Shelves">
+	   <img src="images/storage/storage2.jpeg" class="thumbnail" data-category="kitchen-storage" data-slide="2" alt="Swift Reach Pull-out Shelves">
+	   <img src="images/storage/storage3.jpeg" class="thumbnail" data-category="kitchen-storage" data-slide="3" alt="Organized Haven Pantry Storage">
+	   <img src="images/storage/storage4.jpeg" class="thumbnail" data-category="kitchen-storage" data-slide="4" alt="Tidy Treasure Pantry Storage">
+	   <img src="images/storage/storage5.jpeg" class="thumbnail" data-category="kitchen-storage" data-slide="5" alt="Corner Solutions">
+	   <img src="images/storage/storage6.jpeg" class="thumbnail" data-category="kitchen-storage" data-slide="6" alt="Clever Corner Kitchen Solutions">
+	</div>
+     </div>
+
+     <!-- Category: Kitchen Accessories -->
+     <div class="category-container">
+	<h2>Finishes & Accessories</h2>
+	<div class="gallery">
+	   <img src="images/accessories/accessories1.jpeg" class="thumbnail" data-category="kitchen-accessories" data-slide="1" alt="Elegant Touch Handles & Knobs">
+	   <img src="images/accessories/accessories2.jpeg" class="thumbnail" data-category="kitchen-accessories" data-slide="2" alt="Refined Grip Handles & Knobs">
+	   <img src="images/accessories/accessories3.jpeg" class="thumbnail" data-category="kitchen-accessories" data-slide="3" alt="Gleaming Guard Backsplash">
+	   <img src="images/accessories/accessories4.jpeg" class="thumbnail" data-category="kitchen-accessories" data-slide="4" alt="Stylish Shiels Backsplash">
+	   <img src="images/accessories/accessories5.jpeg" class="thumbnail" data-category="kitchen-accessories" data-slide="5" alt="Refine Edge Mouldings & Trim">
+	   <img src="images/accessories/accessories6.jpeg" class="thumbnail" data-category="kitchen-accessories" data-slide="6" alt="Timeless Craft Mouldings & Trim">
+	</div>
+     </div>
+
+     <!-- Pop-up Modal -->
+     <div id="galleryModal" class="gallery-modal">
+	<span class="gallery-close">&times;</span>
+	<div class="gallery-modal-content">
+	   <!-- Slides for Built Kitchens -->
+	   <div class="mySlides built-kitchens">
+		<div class="numbertext">1 / 6</div>
+		<img src="images/kitchen1.jpeg" style="width:100%">
+		<div class="text">Classic Elegnace</div>
+	   </div>
+	   <div class="mySlides built-kitchens">
+		<div class="numbertext">2 / 6</div>
+		<img src="images/kitchen2.jpeg" style="width:100%">
+		<div class="text">Light Charm</div>
+	   </div>
+	   <div class="mySlides built-kitchens">
+		<div class="numbertext">3 / 6</div>
+		<img src="images/kitchen3.jpeg" style="width:100%">
+		<div class="text">Horizon Haven</div>
+	   </div>
+	   <div class="mySlides built-kitchens">
+		<div class="numbertext">4 / 6</div>
+		<img src="images/kitchen4.jpeg" style="width:100%">
+		<div class="text">Lumina Loft</div>
+	   </div>
+	   <div class="mySlides built-kitchens">
+		<div class="numbertext">5 / 6</div>
+		<img src="images/kitchen5.jpeg" style="width:100%">
+		<div class="text">Veranda Vista</div>
+	   </div>
+	   <div class="mySlides built-kitchens">
+		<div class="numbertext">6 / 6</div>
+		<img src="images/kitchen6.jpeg" style="width:100%">
+		<div class="text">Solaris Suite</div>
+	   </div>
+
+	   <!-- Slides for Kitchen Cabinets -->
+	   <div class="mySlides kitchen-cabinets">
+		<div class="numbertext">1 / 6</div>
+		<img src="images/cabinets/cabinets1.jpeg" style="width:100%">
+		<div class="text">Foundation Base Cabinets</div>
+	   </div>
+	   <div class="mySlides kitchen-cabinets">
+		<div class="numbertext">2 / 6</div>
+		<img src="images/cabinets/cabinets2.jpeg" style="width:100%">
+		<div class="text">Heritage Base Cabinets</div>
+	   </div>
+	   <div class="mySlides kitchen-cabinets">
+		<div class="numbertext">3 / 6</div>
+		<img src="images/cabinets/cabinets3.jpeg" style="width:100%">
+		<div class="text">Elevation Wall Cabinets</div>
+	   </div>
+	   <div class="mySlides kitchen-cabinets">
+		<div class="numbertext">4 / 6</div>
+		<img src="images/cabinets/cabinets4.jpeg" style="width:100%">
+		<div class="text">Horizon Wall Cabinets</div>
+	   </div>
+	   <div class="mySlides kitchen-cabinets">
+		<div class="numbertext">5 / 6</div>
+		<img src="images/cabinets/cabinets5.jpeg" style="width:100%">
+		<div class="text">Apex Tall Cabinets</div>
+	   </div>
+	   <div class="mySlides kitchen-cabinets">
+		<div class="numbertext">6 / 6</div>
+		<img src="images/cabinets/cabinets6.jpeg" style="width:100%">
+		<div class="text">Artisan Speciality Cabinets</div>
+	   </div>
+
+	   <!-- Slides for Kitchen Countertops -->
+	   <div class="mySlides kitchen-countertops">
+		<div class="numbertext">1 / 3</div>
+		<img src="images/countertops/countertops1.jpeg" style="width:100%">
+		<div class="text">Oak Elegance Countertops</div>
+	   </div>
+	   <div class="mySlides kitchen-countertops">
+		<div class="numbertext">2 / 3</div>
+		<img src="images/countertops/countertops2.jpeg" style="width:100%">
+		<div class="text">Maple Heritage Butcher Block</div>
+	   </div>
+	   <div class="mySlides kitchen-countertops">
+		<div class="numbertext">3 / 3</div>
+		<img src="images/countertops/countertops3.jpeg" style="width:100%">
+		<div class="text">Contrast Harmony Countertops</div>
+	   </div>
+
+	   <!-- Slides for Kitchen Islands -->
+	   <div class="mySlides kitchen-islands">
+		<div class="numbertext">1 / 3</div>
+		<img src="images/islands/islands1.jpeg" style="width:100%">
+		<div class="text">Versatile Oasis Kitchen Islands</div>
+	   </div>
+	   <div class="mySlides kitchen-islands">
+		<div class="numbertext">2 / 3</div>
+		<img src="images/islands/islands2.jpeg" style="width:100%">
+		<div class="text">Seamless Haven Kitchen Islands</div>
+	   </div>
+	   <div class="mySlides kitchen-islands">
+		<div class="numbertext">3 / 3</div>
+		<img src="images/islands/islands3.jpeg" style="width:100%">
+		<div class="text">Mobile Culinary Station</div>
+	   </div>
+
+	   <!-- Slides for Kitchen Storage -->
+	   <div class="mySlides kitchen-storage">
+		<div class="numbertext">1 / 6</div>
+		<img src="images/storage/storage1.jpeg" style="width:100%">
+		<div class="text">Effortless Access Pull-out Shelves</div>
+	   </div>
+	   <div class="mySlides kitchen-storage">
+		<div class="numbertext">2 / 6</div>
+		<img src="images/storage/storage2.jpeg" style="width:100%">
+		<div class="text">Swift Reach Pull-out Shelves</div>
+	   </div>
+	   <div class="mySlides kitchen-storage">
+		<div class="numbertext">3 / 6</div>
+		<img src="images/storage/storage3.jpeg" style="width:100%">
+		<div class="text">Organized Haven Pantry Storage</div>
+	   </div>
+	   <div class="mySlides kitchen-storage">
+		<div class="numbertext">4 / 6</div>
+		<img src="images/storage/storage4.jpeg" style="width:100%">
+		<div class="text">Tidy Treasure Pantry Storage</div>
+	   </div>
+	   <div class="mySlides kitchen-storage">
+		<div class="numbertext">5 / 6</div>
+		<img src="images/storage/storage5.jpeg" style="width:100%">
+		<div class="text">Corner Solutions</div>
+	   </div>
+	   <div class="mySlides kitchen-storage">
+		<div class="numbertext">6 / 6</div>
+		<img src="images/storage/storage6.jpeg" style="width:100%">
+		<div class="text">Clever Corner Kitchen Solutions</div>
+	   </div>
+
+	   <!-- Slides for Kitchen Accessories -->
+	   <div class="mySlides kitchen-accessories">
+		<div class="numbertext">1 / 6</div>
+		<img src="images/accessories/accessories1.jpeg" style="width:100%">
+		<div class="text">Elegant Touch Handles & Knobs</div>
+	   </div>
+	   <div class="mySlides kitchen-accessories">
+		<div class="numbertext">2 / 6</div>
+		<img src="images/accessories/accessories2.jpeg" style="width:100%">
+		<div class="text">Refined Grip Handles & Knobs</div>
+	   </div>
+	   <div class="mySlides kitchen-accessories">
+		<div class="numbertext">3 / 6</div>
+		<img src="images/accessories/accessories3.jpeg" style="width:100%">
+		<div class="text">Gleaming Guard Backsplash</div>
+	   </div>
+	   <div class="mySlides kitchen-accessories">
+		<div class="numbertext">4 / 6</div>
+		<img src="images/accessories/accessories4.jpeg" style="width:100%">
+		<div class="text">Stylish Shield Backsplash</div>
+	   </div>
+	   <div class="mySlides kitchen-accessories">
+		<div class="numbertext">5 / 6</div>
+		<img src="images/accessories/accessories5.jpeg" style="width:100%">
+		<div class="text">Refine Edge Mouldings & Trim</div>
+	   </div>
+	   <div class="mySlides kitchen-accessories">
+		<div class="numbertext">6 / 6</div>
+		<img src="images/accessories/accessories6.jpeg" style="width:100%">
+		<div class="text">Timeless Craft Moulding & Trim</div>
+	   </div>
+
+	   <!-- Controls -->
+	   <a class="gallery-prev" onclick="plusSlides(-1)">&#10094;</a>
+	   <a class="gallery-next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+     </div>
+
+  </div>
+
+  <!-- Footer -->
+     <footer class="footer">
+	<div class="footer-container">
+	   <div class="footer-column">
+		<h3>Contact Us</h3>
+		<p>50 Bilogorska, Slavonski Brod, 35000</p>
+		<p>Phone: (+385) 900358278</p>
+		<p>Email: comingsoon@kekis.hr</p>
+	   </div>
+	   <div class="footer-column">
+		<h3>Follow Us</h3>
+		<a href="#"><img src="images/icons/facebook_icon.png" alt="Facebook"></a>
+		<a href="#"><img src="images/icons/instagram_icon.png" alt="Insatgram"></a>
+		<a href="#"><img src="images/icons/linkedin_icon.png" alt="LinkedIn"></a>
+	   </div>
+	   <div class="footer-column">
+		<h3>Quick Links</h3>
+		<a href="index.htm">Home |</a>
+		<a href="aboutus.htm">About Us |</a>
+		<a href="products.htm">Products |</a>
+		<a href="gallery.htm">Gallery |</a>
+		<a href="news.htm">News |</a>
+		<a href="contactus.htm">Contact Us |</a>
+		<a href="faqs.htm">FAQ's</a>
+	   </div>
+	   <div class="footer-column">
+		<h3>Newsletter</h3>
+		<form action="/subscribe" method="post">
+		   <input type="email" name="email" placeholder="Enter your email">
+		   <button type="submit">Subscribe</button>
+		</form>
+	   </div>
+	</div>
+	<div class="footer-bottom">
+	   <p>&copy; 2025 Wooden Kitchen Manufacturer 'Kekis'. All rights reserved.</p>
+	   <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a>
+	</div>
+     </footer>
+
+  <script src="JavaScript/scripts.js"></script>
+
+  </body>
+
+</html>

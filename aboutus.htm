@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	<title>Kekis</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://fonts.googlapis.com/css?famiy=Poppins">
+	<style>
+	   body,h1,h2,h3,h4,h5 {
+		font-family: "Poppins", sans-serif;
+	   }
+	   body {
+		font-size:16px;
+	   }
+	</style>
+  </head>
+
+  <body>
+
+  <!-- Top Horizontal Menu Bar -->
+     <div class="top-horizontal-menu">
+	<ul>
+	   <li><a href="index.htm">Home</a></li>
+	   <li><a href="aboutus.htm">About Us</a></li>
+	   <li><a href="products.htm">Products</a></li>
+	   <li><a href="contactus.htm">Contact Us</a></li>
+	</ul>
+     </div>
+
+  <!-- Sidebar/menu -->
+     <nav class="sidebar" id="mySidebar">
+	<div class="sidebar-container">
+	   <h3><b>Kekis</b></h3>
+	</div>
+	<div class="sidebar-links">
+	   <a href="index.htm" onclick="closeMenu()">Home</a>
+	   <a href="products.htm" onclick="closeMenu()">Products</a>
+	   <a href="gallery.htm" onclick="closeMenu()">Gallery</a>
+	   <a href="news.htm" onclick="closeMenu()">News</a>
+	   <a href="contactus.htm" onclick="closeMenu()">Contact Us</a>
+	   <a href="faqs.htm" onclick="closeMenu()">FAQ's</a>
+	</div>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">x</a>
+     </nav>
+
+  <!-- Top Menu on small screens -->
+     <header class="top-menu">
+	<a href="javascript:void(0)" class="menu-button" onclick="openMenu()">☰</a>
+	<span>Kekis</span>
+     </header>
+
+  <!-- Overlay for small screens -->
+     <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+  <!-- Page Content -->
+  <div class="main" style="margin-left: 340px; margin-right: 40px;">
+
+  <!-- Header -->
+     <div class="container" id="aboutus">
+	<h1 class="jumbo"><b>Wooden Kitchen</b></h1>
+	<h1 class="xxxlarge text-red"><b>About Us</b></h1>
+	<hr class="round" style="width: 200px; border: 5px solid red; margin-left: 0;">
+ <!-- Logo on the right side -->
+        <div class="logo-container">
+	   <img src="images/main_logo_kekis.png" alt="KEKIS logo" class="logo">
+        </div>
+     </div>
+
+  <!-- About Us Story -->
+     <div class="about-us-section">
+	<h1>The Journey of Croatia's Premier Wooden Kitchen Manufactory</h1>
+	<p>Our story began in the heart of Croatia, amidst the rolling hills and serene landscapes, where craftsmanship is an art passed down through generations. In 2020, we turned a long-cherished dream into reality by founding our wooden kitchen manufactory company. Inspired by the rich history of woodworking and the beauty of nature, our vision was to create kitchens that would stand as the heart of every home, blending timeless aesthetics with modern functionality.</p>
+	<p>From the very beginning, we embraced the philosophy of combining traditional woodworking techniques with innovative design. Our founder, Alex, grew up in a family of carpenters and spent countless hours in his grandfather's workshop. The scent of fresh wood and sound of saws became a symphony that ignited his passion. With a team of skilled artisians and designers, Alex set out to create kitchens that would be more than just a place to cook - they would be spaces where memories are made.</p>
+	<img src="images/workshop/workshop2.jpeg" alt="Inside of Workshop">
+	<h2>The journey</h2>
+	<p>Our journey was not without its challenges. The initial days were filled with tireless efforts, late nights, and unwavering dedication. We started small, crafting custom kitchen pieces in a modest workshop. Word of mouth began to spread as our clients experienced the quality and craftsmanship of our creations. Each piece we produced was a testament to our commitment to excellence.</p>
+	<p>As our reputation grew, so did our company. By 2021, we expanded our workshop, invested in cutting-edge technology, and welcomed new talent to our team. Our designs evolved to meet the diverse needs and tastes of our clients, from rustic countryside kitchens to sleek, modern spaces. We collaborated with local supliers, ensuring that every piece of wood we used was sustainably sourced, reflecting our commitment to environmental responsibility.</p>
+	<img src="images/workshop/workshop3.jpeg" alt="Wooden kitchen in progress">
+	<h2>The showroom</h2>
+	<p>The year 2022 marked a significant milestone as we opened our first showroom in the vibrant city of Slavonski Brod. This space became a hub of inspiration, where clients could see, touch, and feel the craftsmanship that goes into every kitchen we create. Our dedication to customer satisfaction led us to offer personalized consultations, working closely with each client to bring their vision to life.</p>
+	<p>Today, our company stands as a testament to the power of passion, perseverance, and the pursuit of excellence. We have successfully completed hundreds of projects across Croatia and beyond, each kitchen telling its own unique story. Our commitment to quality and innovation has earned us recognition and accolades with the industry.</p>
+	<img src="images/workshop/workshop4.jpeg" alt="Our first Showroom">
+	<h2>Continuous growth</h2>
+	<p>As we continue to grow, we remain true to our roots. Every kitchen we create is a labor of love, infused with the artistry and dedication that has been the cornerstone of our success since 2020. We are proud to be a part of our clients lives, helping them create spaces where they can cook, gather, and create cherished memories for years to come.</p>
+	<p>Welcome to our world, where tradition meets innovation, and every kitchen is a masterpiece!</p>
+	<img src="images/workshop/workshop5.jpeg" alt="Our Team building a kitchen in showroom">
+     </div>
+
+  </div>
+
+  <!-- Footer -->
+     <footer class="footer">
+	<div class="footer-container">
+	   <div class="footer-column">
+		<h3>Contact Us</h3>
+		<p>50 Bilogorska, Slavonski Brod, 35000</p>
+		<p>Phone: (+385) 900358278</p>
+		<p>Email: comingsoon@kekis.hr</p>
+	   </div>
+	   <div class="footer-column">
+		<h3>Follow Us</h3>
+		<a href="#"><img src="images/icons/facebook_icon.png" alt="Facebook"></a>
+		<a href="#"><img src="images/icons/instagram_icon.png" alt="Insatgram"></a>
+		<a href="#"><img src="images/icons/linkedin_icon.png" alt="LinkedIn"></a>
+	   </div>
+	   <div class="footer-column">
+		<h3>Quick Links</h3>
+		<a href="index.htm">Home |</a>
+		<a href="aboutus.htm">About Us |</a>
+		<a href="products.htm">Products |</a>
+		<a href="gallery.htm">Gallery |</a>
+		<a href="news.htm">News |</a>
+		<a href="contactus.htm">Contact Us |</a>
+		<a href="faqs.htm">FAQ's</a>
+	   </div>
+	   <div class="footer-column">
+		<h3>Newsletter</h3>
+		<form action="/subscribe" method="post">
+		   <input type="email" name="email" placeholder="Enter your email">
+		   <button type="submit">Subscribe</button>
+		</form>
+	   </div>
+	</div>
+	<div class="footer-bottom">
+	   <p>&copy; 2025 Wooden Kitchen Manufacturer 'Kekis'. All rights reserved.</p>
+	   <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a>
+	</div>
+     </footer>
+
+  <script src="JavaScript/scripts.js"></script>
+
+  </body>
+
+</html>
