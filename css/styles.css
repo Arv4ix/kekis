@@ -801,6 +801,73 @@ main {
 	}
 }
 
+/* New Product Launch Section */
+
+.new-launches {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-launches h1 {
+    color: #444444;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.launch-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.launch-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.launch-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.launch-description {
+    font-size: 1em;
+    color: #666666;
+}
+
+.launch-details {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.launch-details h2 {
+    color: #444444;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.launch-details p {
+    font-size: 1em;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
 /* Footer Styling */
 
 .footer {
