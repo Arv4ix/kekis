@@ -82,13 +82,17 @@ document.addEventListener("DOMContentLoaded", function() {
 	let slideIndex = 1;
 
 	// Ensure modal is hidden on page load
-	modal.style.display = "none";
+	if (modal) {
+		modal.style.display = "none";
+	}
 
 	// Event listeners for thumbnails
 	let thumbnails = document.querySelectorAll(".thumbnail");
 	thumbnails.forEach(thumbnail => {
 		thumbnail.addEventListener("click", function() {
-			modal.style.display = "block";
+			if (modal) {
+				modal.style.display = "block";
+			}
 			category = this.getAttribute("data-category");
 			slideIndex = parseInt(this.getAttribute("data-slide"), 10);
 			slides = document.querySelectorAll(`.mySlides`);
@@ -106,9 +110,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	// Event listener for closing the modal
 	let closeModal = document.getElementsByClassName("gallery-close")[0];
-	closeModal.onclick = function() {
-		modal.style.display = "none";
-	};
+	if (closeModal) {
+		closeModal.onclick = function() {
+			if (modal) {
+				modal.style.display = "none";
+			}
+		};
+	}
+
+	// Ensure that gallery navigation controls exist before adding event listeners
+	let prevButton = document.querySelector(".gallery-prev");
+	let nextButton = document.querySelector(".gallery-next");
+
+	console.log(prevButton); // Log to check element
+	console.log(nextButton); // Log to check element
+
+	if (prevButton) {
+		prevButton.addEventListener("click", function() {
+			plusSlides(-1);
+		});
+	}
+
+	if (nextButton) {
+		nextButton.addEventListener("click", function() {
+			plusSlides(1);
+		});
+	}
 
 	function plusSlides(n) {
 		showSlides(slideIndex += n);
@@ -130,12 +157,78 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 		slides[slideIndex - 1].style.display = "block";
 	}
+});
 
-	// Addevent listeners for navigation controls
-	document.querySelector(".gallery-prev").addEventListener("click", function() {
-		plusSlides(-1);
-	});
-	document.querySelector(".gallery-next").addEventListener("click", function() {
-		plusSlides(1);
-	});
+// FAQ's page - Toogle FAQ answers
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.faq-item button').forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+            const answer = item.nextElementSibling;
+            if (item.classList.contains('active')) {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+	const modal = document.getElementById('unique-confirmationModal');
+	if (modal) {
+		modal.style.display = 'none';
+	}
+});
+
+// FAQ's page question submission
+document.getElementById('unique-question-form').addEventListener('submit', function(event) {
+	event.preventDefault();
+
+	const name = document.getElementById('unique-name').value;
+	const email = document.getElementById('unique-email').value;
+	const question = document.getElementById('unique-question').value;
+
+	console.log('Form submitted:', { name, email, question });
+
+	const confirmationMessage = `
+		<strong>Name:</strong> ${name} <br>
+		<strong>Email:</strong> ${email} <br>
+		<strong>Question:</strong> ${question}
+	`;
+
+	document.getElementById('unique-confirmationMessage').innerHTML = confirmationMessage;
+	document.getElementById('unique-confirmationModal').style.display = 'block';
+	console.log('Modal opened.');
+});
+
+const closeButton = document.querySelector('.unique-close-button');
+console.log('Close button:', closeButton);
+
+closeButton.addEventListener('click', function() {
+	document.getElementById('unique-confirmationModal').style.display = 'none';
+	console.log('Modal closed');
+});
+
+const confirmButton = document.getElementById('unique-confirmButton');
+console.log('Confirm button:', confirmButton);
+
+confirmButton.addEventListener('click', function() {
+	alert('Thank you for your question! We will get back to you soon.');
+
+	// Clear the form
+	document.getElementById('unique-question-form').reset();
+
+	// Close the modal
+	document.getElementById('unique-confirmationModal').style.display = 'none';
+	console.log('Modal closed after confirmation.');
+});
+
+// Close the modal when clicking anywhere outside of it
+window.addEventListener('click', function(event) {
+	const confirmationModal = this.document.getElementById('unique-confirmationModal');
+	if (event.target === confirmationModal) {
+		confirmationModal.style.display = 'none';
+		console.log('Modal closed when clicking outside.');
+	}
 });

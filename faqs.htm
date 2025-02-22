@@ -54,6 +54,88 @@
   <!-- Overlay for small screens -->
      <div id="overlay" class="overlay" onclick="closeMenu()"></div>
 
+  <!-- Page Content -->
+  <div class="main" style="margin-left: 340px; margin-right: 40px;">
+
+	<!-- Header -->
+		 <div class="container" id="showcase">
+		  <h1 class="jumbo"><b>Wooden Kitchen</b></h1>
+		  <h1 class="xxxlarge text-red"><b>FAQ's</b></h1>
+		  <hr class="round" style="width: 200px; border: 5px solid red; margin-left: 0;">
+   <!-- Logo on the right side -->
+			  <div class="logo-container">
+			  <img src="images/main_logo_kekis.png" alt="KEKIS logo" class="logo">
+			  </div>
+		 </div>
+	
+  <!-- Main page content -->
+   <main>
+	<div class="faq-container">
+		<div class="faq-header">
+			<h1>Frequently Asked Questions</h1>
+			<p>Find answers to common questions about our products and services.</p>
+		</div>
+
+		<section class="faq-item">
+			<button>What materials are used in your wooden kitchen products?</button>
+			<p>We use high-quality hardwoods such as oak and maple, along with echo-friendly finishes to ensure durability and sustainability.</p>
+		</section>
+
+		<section class="faq-item">
+			<button>Do you offer custom kitchen designs?</button>
+			<p>Yes, we offer bespoke kitchen designs tailored to meet your specific needs and preferences. Our design team works closely with you to create the perfect kitchen.</p>
+		</section>
+
+		<section class="faq-item">
+			<button>What is the lead time for a custom kitchen?</button>
+			<p>The lead time for a custom kitchen typically ranges from 8 to 12 weeks, depending on the complexity of the design and availability of materials.</p>
+		</section>
+
+		<section class="faq-item">
+			<button>Do you provide installation services?</button>
+			<p>Yes, we offer professional installation services to ensure your kitchen is installed correctly and efficiently. Our experienced installers take care of every detail.</p>
+		</section>
+
+		<section class="faq-item">
+			<button>What kind of Warranty do you offer?</button>
+			<p>We offer a comprehensive warranty on all our products, covering manufacturing defects and workmanship for up to 5 years.</p>
+		</section>
+
+		<section class="faq-item">
+			<button>How can I schedule a Consultation?</button>
+			<p>You can schedule a consultation by contacting us through our website, calling our customer service number, or visiting our showrooms.</p>
+		</section>
+	</div>
+
+	<section id="ask-question">
+		<h2>Didn't find what you were looking for?</h2>
+		<form id="unique-question-form">
+			<label for="unique-name">Your Name:</label>
+			<input type="text" id="unique-name" name="name" required>
+
+			<label for="email">Your Email:</label>
+			<input type="email" id="unique-email" name="email" required>
+
+			<label for="unique-question">Your Question:</label>
+			<textarea id="unique-question" name="question" rows="5" required></textarea>
+
+			<button type="submit">Submit</button>
+		</form>
+	</section>
+
+	<!-- Modal Structure -->
+	<div id="unique-confirmationModal" class="unique-modal">
+		<div class="unique-modal-content">
+			<span class="unique-close-button">&times;</span>
+			<h2>Confirm Your Submission</h2>
+			<p id="unique-confirmationMessage"></p>
+			<button id="unique-confirmButton">Confirm</button>
+		</div>
+	</div>
+
+   </main>
+  </div>
+
   <!-- Footer -->
      <footer class="footer">
 	<div class="footer-container">

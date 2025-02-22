@@ -232,7 +232,7 @@ main {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(0, 0, 0, 0.9);
 	z-index: 1;
 }
 
@@ -868,13 +868,251 @@ main {
     margin-bottom: 20px;
 }
 
+/* News page announcement styling */
+
+.announcements {
+	padding: 20px;
+	margin: 20px 0;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-item {
+	margin-bottom: 20px;
+}
+
+.announcement-item h2 {
+	font-size: 24px;
+	color: #333;
+	border-bottom: 2px solid #ff6347;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.announcement-item p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #666;
+}
+
+/* Contact Us Page Styling */
+
+.contactus-container {
+	padding: 20px;
+	margin: 20px;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactus-details, .contactus-form {
+	margin-bottom: 20px;
+}
+
+.contactus-details h3, .contactus-form h3 {
+	font-size: 24px;
+	color: #333;
+	border-bottom: 2px solid #ff6347;
+	padding-bottom: 5px;
+}
+
+.contactus-details p, .contactus-form p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #666;
+}
+
+.contactus-form input[type="text"], .contactus-form input[type="email"], .contactus-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.contactus-form button[type="submit"] {
+	background-color: #ff6347;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.contactus-form button[type="submit"]:hover {
+	background-color: #ff4500;
+}
+
+.social-media-links {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.social-media-links a img {
+	max-width: 30px;
+	height: auto;
+	border-radius: 5px;
+}
+
+/* FAQ's Page styling */
+
+.faq-container {
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.faq-header h1 {
+	font-size: 32px;
+	color: #333;
+}
+
+.faq-item {
+	margin-bottom: 20px;
+}
+
+.faq-item button {
+	font-size: 24px;
+	color: #ff6347;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+	background: none;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #ff6347;
+}
+
+.faq-item p {
+	font-size: 16px;
+	color: #666;
+	display: none;
+	padding: 10px;
+	margin: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.faq-item button.active + p {
+	display: block;
+}
+
+/* Question form */
+
+#ask-question {
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+}
+
+#ask-question h2 {
+	margin-bottom: 20px;
+}
+
+#unique-question-form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#unique-question-form input,
+#unique-question-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+#unique-question-form button {
+	padding: 10px 20px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#unique-question-form button:hover {
+	background-color: #45a049;
+}
+
+/* FAQ Unique Modal styles */
+
+.unique-modal {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.unique-modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 500px;
+	border-radius: 5px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: visible;
+}
+
+.unique-close-button {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.unique-close-button:hover,
+.unique-close-button:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#unique-confirmButton {
+	padding: 10px 20px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+#unique-confirmButton:hover {
+	background-color: #45a049;
+}
+
 /* Footer Styling */
 
 .footer {
 	background-color: #D2B48C;
 	color: white;
 	padding: 40px 20px;
-	width: calc(100% - 300px);
+	width: (100% - 300%);
 	box-sizing: border-box;
 	margin-left: 300px;
 	text-align: center;
